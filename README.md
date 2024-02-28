@@ -3,8 +3,8 @@
 Ce dépôt est un simple regroupement de mes ressources pour Exegol, me permettant de lancer des conteneurs personnalisés selon mon flux de travail.
 
 ## Introduction
-Exegol est un outil puissant qui facilite le déploiement et la gestion de conteneurs. Ce référentiel contient des scripts, des configurations, et d'autres ressources spécifiques à mon utilisation d'Exegol.
-[Exegol GitHub Repository](https://github.com/ThePorgs/Exegol)
+Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un outil puissant qui facilite le déploiement et la gestion de conteneurs. Ce référentiel contient des scripts, des configurations, et d'autres ressources spécifiques à mon utilisation d'Exegol.
+
 
 ## Fonctionnalités
 
