@@ -1,4 +1,4 @@
-# Exegol Resources
+# Exegol Ressources
 
 
 ## Introduction
