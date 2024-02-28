@@ -19,7 +19,7 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 - **Lancement d'un serveur FTP accessible en mode anonyme :** Utilisez la commande `runftp`.
 - **Lancement d'un serveur WebDAV sur le port 80 :** Partage du dossier "runwebdav".
 - **Copie de la commande pour activer les couleurs dans PowerShell :** Utilisez la commande `getcolor`.
-- **Quelques Binaires utiles (Potentiel doublons avec les ressources dans /op/ressources)
+- **Quelques Binaires utiles **(Potentiel doublons avec les ressources dans /op/ressources)
 
   
   
