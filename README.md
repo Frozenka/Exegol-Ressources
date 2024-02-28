@@ -10,3 +10,8 @@ git clone https://github.com/votre-utilisateur/exegol-resources.git
 
 
 N'hésitez pas à contribuer en ouvrant des problèmes, en proposant des améliorations ou en soumettant des demandes de fusion.
+
+INSTALLATION :
+git clone https://github.com/Frozenka/Exegol-Ressources.git
+cd Exegol-Ressources
+bash install.sh
