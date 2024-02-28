@@ -1,0 +1,1 @@
+xfreerdp /u:$USER /d:$DOMAINE /v:$IP /p:'$PASSWORD' /kbd:0x0000040C
