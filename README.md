@@ -19,6 +19,8 @@ Exegol est un outil puissant qui facilite le déploiement et la gestion de conte
 - **Lancement d'un serveur FTP accessible en mode anonyme :** Utilisez la commande `runftp`.
 - **Lancement d'un serveur WebDAV sur le port 80 :** Partage du dossier "runwebdav".
 - **Copie de la commande pour activer les couleurs dans PowerShell :** Utilisez la commande `getcolor`.
+
+  
   
  Astuce :
  `tun0 && runwww 80` Permet de lancer un serveur web et d'avoir l'ip tun0 directement dans le pressepapier 
