@@ -14,10 +14,10 @@ Exegol est un outil puissant qui facilite le déploiement et la gestion de conte
 - **Activation directe du SSH sur votre machine :** Utilisez la commande `sshon`.
 - **Réinitialisation de l'interface réseau :** Utilisez la commande `runeth`.
 - **Affichage et copie de l'adresse IP TUN0 :** Utilisez la commande `tun0`.
-- **Copie de la commande pour obtenir un shell dynamique sous Linux :** Utilisez la commande `getfr`.
-- **Copie de la commande pour passer en AZERTY (PowerShell) :** Utilisez la commande `runftp`.
-- **Lancement d'un serveur FTP accessible en mode anonyme :** Utilisez la commande `runwebdav`.
-- **Lancement d'un serveur WebDAV sur le port 80 :** Partage du dossier "/opt/my-resources/bin".
+- **Copie de la commande pour obtenir un shell dynamique sous Linux :** Utilisez la commande `pty`.
+- **Copie de la commande pour passer en AZERTY (PowerShell) :** Utilisez la commande `getfr`.
+- **Lancement d'un serveur FTP accessible en mode anonyme :** Utilisez la commande `runftp`.
+- **Lancement d'un serveur WebDAV sur le port 80 :** Partage du dossier "runwebdav".
 
  Astuce :
  `tun0 && runwww 80` Permet de lancer un serveur web et d'avoir l'ip tun0 directement dans le pressepapier 
