@@ -1,1 +1,2 @@
 xfreerdp /u:$USER /d:$DOMAINE /v:$IP /p:'$PASSWORD' /kbd:0x0000040C
+nmap -sU --min-rate 5000 -p- $TARGET
