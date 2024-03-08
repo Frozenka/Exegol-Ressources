@@ -21,7 +21,7 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 - **Copie de la commande pour activer les couleurs dans PowerShell :** Utilisez la commande `getcolor`.
 - Quelques Binaires utiles (Potentiel doublons avec les ressources dans /op/ressources)
 
-  
+  Ajout des IP (tun0,eth ..) dans la barre de Tmux
   
  Astuce :
  `tun0 && runwww 80` Permet de lancer un serveur web et d'avoir l'ip tun0 directement dans le pressepapier 
