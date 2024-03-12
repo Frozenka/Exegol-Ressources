@@ -1,3 +1,4 @@
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 python3 -m pip install --user uploadserver
 pip3 install wsgidav
 pip install cheroot
