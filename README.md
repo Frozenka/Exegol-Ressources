@@ -20,12 +20,15 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 - **Lancement d'un serveur WebDAV sur le port 80 :** Partage du dossier "runwebdav".
 - **Copie de la commande pour activer les couleurs dans PowerShell :** Utilisez la commande `getcolor`.
 - Quelques Binaires utiles (Potentiel doublons avec les ressources dans /op/ressources)
-
-  Ajout des IP (tun0,eth ..) dans la barre de Tmux
   
  Astuce :
  `tun0 && runwww 80` Permet de lancer un serveur web et d'avoir l'ip tun0 directement dans le pressepapier 
   
+## Config Tmux :
+- Configuration de la barre de statut : La largeur de la partie gauche de la barre de statut est définie à 150. Le contenu de la barre de statut est également défini pour afficher la date, l’adresse IP de ‘eth0’ et ‘tun0’, l’IP publique, le nombre de connexions établies, l’utilisation du CPU et de la RAM.
+- Configuration de l’historique : La limite de l’historique est définie à 50000.
+- Configuration de la souris : La souris est activée et une action est définie pour le bouton droit de la souris pour coller le contenu du presse-papiers.
+- Configuration de la fenêtre : Un raccourci clavier est défini pour diviser la fenêtre en plusieurs panneaux.
 
 ## Installation
    ```bash
