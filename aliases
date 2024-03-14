@@ -8,4 +8,4 @@ alias getfr='echo -n "Set-WinSystemLocale fr-FR; Set-WinUserLanguageList -Langua
 alias getcolor='echo "REG ADD HKCU\\Console /v VirtualTerminalLevel /t REG_DWORD /d 1" | xclip -selection clipboard && echo "CMD copié dans le presse-papiers"'
 alias runftp='python3 -m pyftpdlib -p 21 -w'
 alias runwebdav='sudo /root/.pyenv/versions/3.11.8/bin/wsgidav --host 0.0.0.0 --port=80 --auth=anonymous --root /opt/my-resources/bin'
-alias getrdp='echo "HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server" -Name “fDenyTSConnections” -Value 0 | xclip -selection clipboard && echo "CMD copié dans le presse-papiers"'
+alias getrdp='echo "Set-ItemProperty -Path \"HKLM:\System\CurrentControlSet\Control\Terminal Server\" -Name "fDenyTSConnections" -Value 0" | xclip -selection clipboard && echo "CMD copié dans le presse-papiers"'
