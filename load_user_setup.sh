@@ -8,3 +8,4 @@ wget https://raw.githubusercontent.com/insidetrust/statistically-likely-username
 echo "PermitRootLogin prohibit-password" >> /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git /opt/windows
+cd /opt/windows wget https://raw.githubusercontent.com/fashionproof/EnableAllTokenPrivs/master/EnableAllTokenPrivs.ps1
