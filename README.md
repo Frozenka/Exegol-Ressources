@@ -30,7 +30,7 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 - Configuration de la souris : La souris est activée et une action est définie pour le bouton droit de la souris pour coller le contenu du presse-papiers.
 - Configuration de la fenêtre : Un raccourci clavier est défini pour diviser la fenêtre en plusieurs panneaux.
 
-## Installation
+## Installation /!\ il doit deja y avoir eu un lancement d'exegol genre : "start exegol teste" avant installation /!\
    ```bash
    git clone https://github.com/Frozenka/Exegol-Ressources.git
    cd Exegol-Ressources
