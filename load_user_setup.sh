@@ -1,13 +1,13 @@
 git clone https://github.com/Frozenka/Exegol-Ressources.git
 cd Exegol-Ressources
 
-./install.sh
+/bin/bash install.sh
 
-./$HOME/.exegol/exegol-resources/setup.sh
+/bin/bash /$HOME/.exegol/exegol-resources/setup.sh
 cat tmux.conf > ~/.exegol/my-resources/setup/tmux/tmux.conf
 cat aliases >  ~/.exegol/my-resources/setup/zsh/aliases
 cat history > ~/.exegol/my-resources/setup/zsh/history
 
 cd ..
 rm -rf Exegol-Ressources
-./opt/setup.sh
+/bin/bash /opt/setup.sh
