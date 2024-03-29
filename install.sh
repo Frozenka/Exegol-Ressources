@@ -27,9 +27,9 @@ git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 mv Ghostpack-CompiledBinaries /opt/resources/windows
-cd /opt/windows wget https://raw.githubusercontent.com/fashionproof/EnableAllTokenPrivs/master/EnableAllTokenPrivs.ps1
-cd /opt/windows wget https://raw.githubusercontent.com/Frozenka/linfast/main/winfast
-cd /opt/linux https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
+cd /opt/resources/windows wget https://raw.githubusercontent.com/fashionproof/EnableAllTokenPrivs/master/EnableAllTokenPrivs.ps1
+cd /opt/resources/windows wget https://raw.githubusercontent.com/Frozenka/linfast/main/winfast
+cd /opt/resources/linux https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
 
 rm /workspace/install.sh
  
