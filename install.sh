@@ -30,3 +30,6 @@ mv Ghostpack-CompiledBinaries /opt/resources/windows
 cd /opt/windows wget https://raw.githubusercontent.com/fashionproof/EnableAllTokenPrivs/master/EnableAllTokenPrivs.ps1
 cd /opt/windows wget https://raw.githubusercontent.com/Frozenka/linfast/main/winfast
 cd /opt/linux https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
+
+rm /workspace/install.sh
+echo "configuration perso ok"
