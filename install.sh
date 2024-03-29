@@ -5,6 +5,6 @@ cat history > ~/.exegol/my-resources/setup/zsh/history
 echo wpscan --api-token $api_key --url "http://$TARGET/" --no-banner --plugins-detection aggressive >> ~/.exegol/my-resources/setup/zsh/history
 mv ./win/* $HOME/.exegol/exegol-resources/windows
 mv ./Linux* $HOME/.exegol/exegol-resources/linux
-bash setup.sh
+mv ./setup.sh ~/.exegol/exegol-resources
 cd ..
 rm -rf Exegol-Ressources
