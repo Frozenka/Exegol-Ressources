@@ -1,3 +1,5 @@
+cd /tmp
+
 python3 -m pip install --user uploadserver
 
 pip3 install wsgidav
