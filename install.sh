@@ -1,4 +1,10 @@
-echo wpscan --api-token $api_key --url "http://$TARGET/" --no-banner --plugins-detection aggressive > ~/.exegol/my-resources/setup/zsh/history
+git clone https://github.com/Frozenka/Exegol-Ressources.git
+cd Exegol-Ressources
+
+cat tmux.conf >> ~/.tmux.conf
+cat aliases >>  /opt/.exegol_aliases
+cat history >> ~/.zsh_history
+
 mv ./win/* /opt/resources/windows
 mv ./Linux* /optresources/linux
 mv ./setup.sh /opt
