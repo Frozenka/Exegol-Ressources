@@ -3,8 +3,8 @@ cat aliases >  ~/.exegol/my-resources/setup/zsh/aliases
 cat history > ~/.exegol/my-resources/setup/zsh/history
 
 echo wpscan --api-token $api_key --url "http://$TARGET/" --no-banner --plugins-detection aggressive > ~/.exegol/my-resources/setup/zsh/history
-mv ./win/* $HOME/.exegol/exegol-resources/windows
-mv ./Linux* $HOME/.exegol/exegol-resources/linux
+mv ./win/* /opt/resources/windows
+mv ./Linux* /optresources/linux
 mv ./setup.sh /opt
 cd ..
 rm -rf Exegol-Ressources
