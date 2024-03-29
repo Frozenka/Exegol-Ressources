@@ -6,7 +6,7 @@ cat aliases >>  /opt/.exegol_aliases
 cat history >> ~/.zsh_history
 
 mv ./win/* /opt/resources/windows
-mv ./Linux* /optresources/linux
+mv ./Linux* /opt/resources/linux
 mv ./setup.sh /opt
 
 cd ..
