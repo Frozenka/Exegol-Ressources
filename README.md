@@ -31,7 +31,7 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 - Configuration de la fenêtre : Un raccourci clavier est défini pour diviser la fenêtre en plusieurs panneaux.
 
 ## Installation :
-wget -qO ~/.exegol/my-resources/setup/load_user_setup.sh https://raw.githubusercontent.com/Frozenka/Exegol-Ressources/main/load_user_setup.sh
+`wget -qO ~/.exegol/my-resources/setup/load_user_setup.sh https://raw.githubusercontent.com/Frozenka/Exegol-Ressources/main/load_user_setup.sh`
  
 
 ## Contribuer
