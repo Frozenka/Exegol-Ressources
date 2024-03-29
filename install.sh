@@ -32,4 +32,4 @@ cd /opt/windows wget https://raw.githubusercontent.com/Frozenka/linfast/main/win
 cd /opt/linux https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
 
 rm /workspace/install.sh
-echo "configuration perso ok"
+ 
