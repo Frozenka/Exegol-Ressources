@@ -7,4 +7,5 @@ echo wpscan --api-token $api_key --url "http://$TARGET/" --no-banner --plugins-d
 mv ./win/* $HOME/.exegol/exegol-resources/windows
 mv ./Linux* $HOME/.exegol/exegol-resources/linux
 
+cd ..
 rm -rf Exegol-Ressources
