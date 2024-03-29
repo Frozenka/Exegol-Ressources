@@ -1,7 +1,7 @@
 git clone https://github.com/Frozenka/Exegol-Ressources.git
 cd Exegol-Ressources
 
-/bin/bash install.sh
+/bin/bash ./install.sh
 
 /bin/bash /$HOME/.exegol/exegol-resources/setup.sh
 cat tmux.conf > ~/.exegol/my-resources/setup/tmux/tmux.conf
