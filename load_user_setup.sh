@@ -1,5 +1,3 @@
-git clone https://github.com/Frozenka/Exegol-Ressources.git
-cd Exegol-Ressources
 
 
 /bin/bash ./install.sh
