@@ -10,3 +10,4 @@ cat history > ~/.exegol/my-resources/setup/zsh/history
 
 cd ..
 rm -rf Exegol-Ressources
+bash /opt/setup.sh
