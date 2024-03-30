@@ -1,24 +1,38 @@
 {
-  "proxies": [
+  "mode": "localhost:8080",
+  "sync": false,
+  "autoBackup": false,
+  "passthrough": "",
+  "theme": "",
+  "container": {
+    "incognito": "",
+    "container-1": "",
+    "container-2": "",
+    "container-3": "",
+    "container-4": ""
+  },
+  "commands": {
+    "setProxy": "",
+    "setTabProxy": "",
+    "quickAdd": ""
+  },
+  "data": [
     {
-      "name": "Burp Suite",
-      "id": "1",
-      "notes": "",
-      "fromSubscription": false,
-      "enabled": true,
-      "mode": "manual",
-      "autoconfMode": "pac",
-      "selectedTabIndex": 0,
-      "host": "127.0.0.1",
-      "port": 8080,
+      "active": true,
+      "title": "burp",
+      "type": "http",
+      "hostname": "localhost",
+      "port": "8080",
       "username": "",
       "password": "",
-      "nonproxyhosts": "",
+      "cc": "",
+      "city": "",
+      "color": "#0000ff",
+      "pac": "",
+      "pacString": "",
       "proxyDNS": true,
-      "exceptions": ""
+      "include": [],
+      "exclude": []
     }
-  ],
-  "settings": {},
-  "patterns": [],
-  "globalSettings": {}
-}
+  ]
+}#
