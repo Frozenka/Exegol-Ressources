@@ -13,3 +13,4 @@ alias getrdp='echo "Set-ItemProperty -Path \"HKLM:\\System\\CurrentControlSet\\C
 alias winfast='bash /opt/resources/windows/winfast.sh'
 alias linfast='bash /opt/resources/linux/linfast.sh'
 alias runsmbserv='smbserver.py -smb2support share $(pwd) -user root -password'
+alias ssh2john='/opt/tools/john/run/ssh2john.py'
