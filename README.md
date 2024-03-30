@@ -20,9 +20,9 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 - **Lancement d'un serveur WebDAV sur le port 80 :** Partage du dossier "runwebdav".
 - **Copie de la commande pour activer les couleurs dans PowerShell :** Utilisez la commande `getcolor`.
 - **Copie de la  commande d'activation du RDP :** `getrdp`
-- **Telechargement de la derniere version de winpeas + activation serveur web + copie de la ligne de téléchargement** : `winfast`
--  **Telechargement de la derniere version de linpeas + activation serveur web + copie de la ligne de téléchargement** : `linfast`
--  ** Lancement d'un server SMB dans le repertoire actuel**: `runsmbserv` (Mettre un Mot de passe aprés)
+- **Telechargement de la derniere version de winpeas + activation serveur web + copie de la ligne de téléchargement:**  `winfast`
+- **Telechargement de la derniere version de linpeas + activation serveur web + copie de la ligne de téléchargement:**  `linfast`
+- **Lancement d'un server SMB dans le repertoire actuel:** `runsmbserv` (Mettre un Mot de passe aprés)
 - Quelques Binaires utiles (Potentiel doublons avec les ressources dans /op/ressources)
   
   
