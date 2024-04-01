@@ -5,6 +5,8 @@ cat tmux.conf >> ~/.tmux.conf
 cat aliases >>  /opt/.exegol_aliases
 cat history >> ~/.zsh_history
 
+cp /opt/seclists/Passwords/xato-net-10-million-passwords-1000000.txt /opt/bigwl.txt
+
 mv ./win/* /opt/resources/windows
 mv ./Linux* /opt/resources/linux
 mv ./setup.sh /opt
