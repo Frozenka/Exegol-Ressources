@@ -1,2 +1,4 @@
-xfreerdp /u:$USER /d:$DOMAINE /v:$IP /p:'$PASSWORD' /kbd:0x0000040C
-nmap -sU --min-rate 5000 -p- $TARGET
+xfreerdp /u:$USER /d:$DOMAINE /v:$IP /p:'$PASSWORD' /kbd:0x0000040C #xfreerdp avec langue FR
+nmap -sU --min-rate 5000 -p- $TARGET #Nmap UDP rapide
+linfast # Téléchargement de winpeas + création serveur web + copie commande iwr avec Ip dans le presse papier
+winfast # Téléchargement de linpeas + création serveur web + copie commande wget avec Ip dans le presse papier
