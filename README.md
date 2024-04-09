@@ -22,7 +22,7 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 - **Copie de la  commande d'activation du RDP :** `getrdp`
 - **Telechargement de la derniere version de winpeas + activation serveur web + copie de la ligne de téléchargement:**  `winfast`
 - **Telechargement de la derniere version de linpeas + activation serveur web + copie de la ligne de téléchargement:**  `linfast`
-- **Lancement d'un server SMB dans le repertoire actuel:** `runsmbserv` (Mettre un Mot de passe aprés)
+- **Lancement d'un server SMB dans le repertoire actuel:** `runsmbserv` La commande pour windows dans le presse papier
 - Quelques Binaires utiles (Potentiel doublons avec les ressources dans /op/ressources)
   
   
