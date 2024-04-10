@@ -25,7 +25,7 @@ apt-get install snmp-mibs-downloader
 wget https://raw.githubusercontent.com/insidetrust/statistically-likely-usernames/master/jsmith.txt -P /opt
 echo "PermitRootLogin prohibit-password" >> /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-echo  "export TERM=xterm-256color" >> ~/.zshrc
+#echo  "export TERM=xterm-256color" >> ~/.zshrc
 echo "deb http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/apt/sources.list
 echo "deb-src http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/
 
