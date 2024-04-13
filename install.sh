@@ -8,7 +8,7 @@ cat history >> ~/.zsh_history
 cp /opt/seclists/Passwords/xato-net-10-million-passwords-1000000.txt /opt/bigwl.txt
 
 mv ./win/* /opt/resources/windows
-mv ./Linux* /opt/resources/linux
+mv ./Linux* /opt/resources/
 mv ./setup.sh /opt
 
 cd ..
