@@ -2,5 +2,6 @@ xfreerdp /u:$USER /d:$DOMAINE /v:$IP /p:'$PASSWORD' /kbd:0x0000040C #xfreerdp av
 nmap -sU --min-rate 5000 -p- $TARGET #Nmap UDP rapide
 linfast # Téléchargement de winpeas + création serveur web + copie commande iwr avec Ip dans le presse papier
 winfast # Téléchargement de linpeas + création serveur web + copie commande wget avec Ip dans le presse papier
-bloodhound.py -d '$DC' -u '$USER' -p '$PASSWORD' -c all -ns $IP
-mssqlclient.py <user>@<FQDN/IP> -windows-auth
+bloodhound.py -d '$DC' -u '$USER' -p '$PASSWORD' -c all -ns $IP #collecteur pour BH directement depuis l'host
+mssqlclient.py <user>@<FQDN/IP> -windows-auth #connexion mssql
+GetUserSPNs.py -request -dc-ip 192.168.50.70 corp.com/USER #Kerberoasting 
