@@ -39,5 +39,6 @@ cd /opt/resources/windows wget https://raw.githubusercontent.com/fashionproof/En
 cd /opt/resources/windows wget https://raw.githubusercontent.com/Frozenka/linfast/main/winfast
 cd /opt/resources/linux https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
 
+pip3 install -r /opt/tools/uploader/requirements.txt
 rm /workspace/install.sh
  
