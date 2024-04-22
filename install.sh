@@ -32,6 +32,7 @@ echo "deb-src http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/
 
 git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/Frozenka/uploader /opt/tools/
 
 mv Ghostpack-CompiledBinaries /opt/resources/windows
 cd /opt/resources/windows wget https://raw.githubusercontent.com/fashionproof/EnableAllTokenPrivs/master/EnableAllTokenPrivs.ps1
