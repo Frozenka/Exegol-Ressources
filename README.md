@@ -6,8 +6,10 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 
 #### Ce dépôt est un simple regroupement de mes ressources pour Exegol, me permettant de lancer des conteneurs personnalisés selon mon flux de travail a chaque nouveau conteneur.
 
-## Fonctionnalités
+![Enregistrement 2024-04-26 150231](https://github.com/Frozenka/Exegol-Ressources/assets/13807685/6db46485-9d6f-43c7-ace7-72b5533811a1)
 
+
+## Fonctionnalités
 - **Utilisation de tmux avec la souris :** Plus besoin de connaître une multitude de raccourcis clavier.
 - **Division du terminal tmux :** Divisez le terminal tmux en quatre en utilisant simplement `Ctrl+b+'`.
 - **Lancement d'un serveur web Python en upload :** Utilisez la commande `runwww 80`.
