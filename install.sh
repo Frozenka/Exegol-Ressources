@@ -39,6 +39,8 @@ cd /opt/resources/windows wget https://raw.githubusercontent.com/fashionproof/En
 cd /opt/resources/windows wget https://raw.githubusercontent.com/Frozenka/linfast/main/winfast
 cd /opt/resources/linux https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
 
+sed -i 's/"#"/"➜"/g' /opt/.exegol_shells_rc #Uniquement pour modif le # du shell de base
+
 pip3 install -r /opt/tools/uploader/requirements.txt
 rm /workspace/install.sh
  
