@@ -15,7 +15,7 @@ cd ..
 rm -rf Exegol-Ressources
 cd /tmp
 python3 -m pip install --user uploadserver
-
+sudo apt install medusa -y
 pip3 install wsgidav
 pip install cheroot
 pip3 install pyftpdlib
