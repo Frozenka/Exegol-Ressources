@@ -6,7 +6,8 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 
 #### Ce dépôt est un simple regroupement de mes ressources pour Exegol, me permettant de lancer des conteneurs personnalisés selon mon flux de travail a chaque nouveau conteneur.
 
-![Enregistrement 2024-04-26 150231](https://github.com/Frozenka/Exegol-Ressources/assets/13807685/6db46485-9d6f-43c7-ace7-72b5533811a1)
+
+![Exegol (1)](https://github.com/Frozenka/Exegol-Ressources/assets/13807685/ceecb3e0-d5c7-4d53-8cbd-ff0223119113)
 
 
 ## Fonctionnalités
