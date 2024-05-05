@@ -22,7 +22,6 @@ pip3 install pyftpdlib
 
 apt-get install snmp-mibs-downloader
 
-wget https://raw.githubusercontent.com/insidetrust/statistically-likely-usernames/master/jsmith.txt -P /opt
 echo "PermitRootLogin prohibit-password" >> /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
 #echo  "export TERM=xterm-256color" >> ~/.zshrc
