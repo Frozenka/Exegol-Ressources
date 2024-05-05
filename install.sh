@@ -30,7 +30,7 @@ echo "deb-src http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/
 
 git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-git clone git@github.com:Frozenka/uploader.git /opt/tools/uploader
+git clone https://github.com/Frozenka/uploader.git /opt/tools/uploader
 pip3 install -r /opt/tools/uploader/requirements.txt
 
 mv Ghostpack-CompiledBinaries /opt/resources/windows
