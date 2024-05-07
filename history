@@ -7,3 +7,4 @@ mssqlclient.py <user>@<FQDN/IP> -windows-auth #connexion mssql
 GetUserSPNs.py -request -dc-ip 192.168.50.70 corp.com/USER #Kerberoasting 
 certipy find -vulnerable -u "$USER@$DOMAIN" -p "$PASSWORD" -stdout
 medusa -U '/opt/seclists/Usernames/top-usernames-shortlist.txt' -P /opt/seclists/Passwords/500-worst-passwords.txt -t 4 -e ns -n 21 -O '/workspace/resultFTPMedusa.txt' -M ftp -h $IP
+gobuster vhost -w /opt/seclists/Discovery/DNS/subdomains-top1million-5000.txt  -u $TARGET -t 50 --append-domain # Recherche de vhosts avec Gobuster
