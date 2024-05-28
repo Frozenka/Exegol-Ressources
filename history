@@ -1,4 +1,5 @@
-uploader
+uploader --port 80 --d /opt/resources/linux --os linux
+uploader --port 80 --d /opt/resources/windows --os windows
 xfreerdp /u:$USER /d:$DOMAINE /v:$IP /p:'$PASSWORD' /kbd:0x0000040C #xfreerdp avec langue FR
 nmap -sU --min-rate 5000 -p- $TARGET #Nmap UDP rapide
 linfast # Téléchargement de winpeas + création serveur web + copie commande iwr avec Ip dans le presse papier
