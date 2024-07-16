@@ -9,3 +9,4 @@ certipy find -vulnerable -u "$USER@$DOMAIN" -p "$PASSWORD" -stdout
 medusa -U '/opt/seclists/Usernames/top-usernames-shortlist.txt' -P /opt/seclists/Passwords/500-worst-passwords.txt -t 4 -e ns -n 21 -O '/workspace/resultFTPMedusa.txt' -M ftp -h $IP
 gobuster vhost -w /opt/seclists/Discovery/DNS/subdomains-top1million-5000.txt  -u $TARGET -t 50 --append-domain # Recherche de vhosts avec Gobuster
 export= TARGET1=XXXX | echo $TARGET1
+runsmbserv #Lance un serveur smb
