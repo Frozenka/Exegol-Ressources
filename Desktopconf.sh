@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # URL de l'image à télécharger
-IMAGE_URL="https://raw.githubusercontent.com/xct/kali-clean/main/.wal"
+IMAGE_URL="https://raw.githubusercontent.com/xct/kali-clean/main/.wallpaper/23.jpg"
 
 # Dossier de destination pour l'image
 IMAGE_DIR="/root/Downloads"
