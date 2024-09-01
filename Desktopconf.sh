@@ -1,9 +1,6 @@
 #!/bin/bash
-IMAGE_URL="https://raw.githubusercontent.com/xct/kali-clean/main/.wallpaper/23.jpg"
-IMAGE_DIR="/root/Downloads"
-IMAGE_PATH="$IMAGE_DIR/23.jpg"
-mkdir -p "$IMAGE_DIR"
-curl -s -o "$IMAGE_PATH" "$IMAGE_URL"
+cd /root/Download
+wget https://raw.githubusercontent.com/xct/kali-clean/main/.wallpaper/23.jpg
 TERMINATOR_CONFIG="/root/.config/terminator/config"
 
 if [ ! -f "$TERMINATOR_CONFIG" ]; then
