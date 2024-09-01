@@ -11,7 +11,7 @@ cat <<EOF > "$TERMINATOR_CONFIG"
 [global_config]
 [profiles]
   [[default]]
-  background_image = ./23.jpg
+  background_image = /workspace/23.jpg
   background_type = image
   background_darkness = 0.8
 EOF
