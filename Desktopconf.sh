@@ -1,6 +1,4 @@
 #!/bin/bash
-mkdir /root/Download
-cd /root/Download
 wget https://raw.githubusercontent.com/xct/kali-clean/main/.wallpaper/23.jpg
 TERMINATOR_CONFIG="/root/.config/terminator/config"
 
@@ -13,7 +11,7 @@ cat <<EOF > "$TERMINATOR_CONFIG"
 [global_config]
 [profiles]
   [[default]]
-  background_image = $IMAGE_PATH
+  background_image = ./23.jpg
   background_type = image
   background_darkness = 0.8
 EOF
