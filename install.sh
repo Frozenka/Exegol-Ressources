@@ -41,6 +41,7 @@ sed -i 's/"#"/"%{$fg[green]%}➜ %{$reset_color%}"/g' /opt/.exegol_shells_rc
 sed -i 's/"%m"/"${HOSTNAME#exegol-}"/g' /opt/.exegol_shells_rc
 sed -i 's/(%Z)//g' ~/.zshrc
 
+curl https://raw.githubusercontent.com/Frozenka/Exegol-Ressources/main/Desktopconf.sh | bash
 # On supprime l'install.sh
 rm /workspace/install.sh
  
