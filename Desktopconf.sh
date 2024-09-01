@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir /root/Download
 cd /root/Download
 wget https://raw.githubusercontent.com/xct/kali-clean/main/.wallpaper/23.jpg
 TERMINATOR_CONFIG="/root/.config/terminator/config"
