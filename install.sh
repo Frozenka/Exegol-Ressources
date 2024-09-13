@@ -21,6 +21,7 @@ pip install cheroot
 pip3 install pyftpdlib
 
 apt-get install snmp-mibs-downloader
+apt install ripgrep
 
 echo "PermitRootLogin prohibit-password" >> /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
