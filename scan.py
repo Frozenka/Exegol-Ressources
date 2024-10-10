@@ -13,7 +13,7 @@ def run_nmap():
         print("Lancement du scan Nmap...")
         subprocess.run(command, check=True)
         print("Scan Nmap terminé. Lancement de scrapnmap...")
-        subprocess.run(["scrapnmap", "-f", "nmapscan.txt"], check=True)
+        subprocess.run(["python3", "/opt/resources/scrapmap.py", "-f", "nmapscan.txt"], check=True)
 
         print("Traitement terminé avec succès.")
     except subprocess.CalledProcessError as e:
