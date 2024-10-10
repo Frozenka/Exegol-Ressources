@@ -1,7 +1,7 @@
 import subprocess
 import sys
 
-scope= input('Enter scope file')
+scope= input('Enter scope file \n')
 
 def run_nmap():
     try:
