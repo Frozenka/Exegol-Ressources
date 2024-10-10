@@ -8,6 +8,8 @@ cat history >> ~/.zsh_history
 cp /opt/seclists/Passwords/xato-net-10-million-passwords-1000000.txt /opt/bigwl.txt
 wget https://raw.githubusercontent.com/laluka/pypotomux/refs/heads/main/wordlists/path.lst
 
+mv ./scan.py /opt/resources/scan.py
+mv ./scrapmap.py /opt/resources/scrapmap.py
 mv ./win/* /opt/resources/windows
 mv ./Linux/* "/opt/resources/linux"
 mv ./setup.sh /opt
