@@ -37,7 +37,7 @@ def generate_markdown(results):
 
     for ip, ports in results.items():
 
-        markdown_output += f"#### Résultats pour l'adresse IP: {ip}\n\n"
+        markdown_output += f"##### Résultats pour l'adresse IP: {ip}\n\n"
 
         markdown_output += "| PORT       | STATE | SERVICE | REASON        | VERSION         |\n"
 
