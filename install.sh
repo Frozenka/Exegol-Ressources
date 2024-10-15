@@ -1,4 +1,5 @@
 # Cloner le dépôt Exegol-Ressources et entrer dans le dossier
+apt update
 git clone https://github.com/Frozenka/Exegol-Ressources.git
 cd Exegol-Ressources
 
@@ -28,6 +29,7 @@ rm -rf Exegol-Ressources
 # Installation de paquets Python et systèmes
 cd /tmp
 python3 -m pip install --user uploadserver
+apt install ripgrep
 apt install medusa -y
 pip3 install wsgidav cheroot pyftpdlib
 
