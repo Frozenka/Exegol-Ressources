@@ -1,51 +1,66 @@
+# Cloner le dépôt Exegol-Ressources et entrer dans le dossier
 git clone https://github.com/Frozenka/Exegol-Ressources.git
 cd Exegol-Ressources
 
+# Ajouter des configurations à tmux.conf et zsh_history
 cat tmux.conf >> ~/.tmux.conf
-cat aliases >>  /opt/.exegol_aliases
+cat aliases >> /opt/.exegol_aliases
 cat history >> ~/.zsh_history
 
+# Copier un fichier de mots de passe
 cp /opt/seclists/Passwords/xato-net-10-million-passwords-1000000.txt /opt/bigwl.txt
-wget https://raw.githubusercontent.com/laluka/pypotomux/refs/heads/main/wordlists/path.lst
 
+# Télécharger un fichier de liste de chemins
+wget https://raw.githubusercontent.com/laluka/pypotomux/main/wordlists/path.lst
+
+# Déplacer des fichiers et répertoires dans les bons emplacements
 mv ./scan.py /opt/resources/scan.py
 mv ./scrapmap.py /opt/resources/scrapmap.py
 mv ./win/* /opt/resources/windows
-mv ./Linux/* "/opt/resources/linux"
+mv ./Linux/* /opt/resources/linux
 mv ./setup.sh /opt
 mv ./path.lst /opt
+
+# Revenir à la racine et supprimer le dossier cloné
 cd ..
 rm -rf Exegol-Ressources
+
+# Installation de paquets Python et systèmes
 cd /tmp
 python3 -m pip install --user uploadserver
-sudo apt install medusa -y
-pip3 install wsgidav
-pip install cheroot
-pip3 install pyftpdlib
+apt install medusa -y
+pip3 install wsgidav cheroot pyftpdlib
 
-apt-get install snmp-mibs-downloader
-apt install ripgrep
+# Installation d'outils supplémentaires
+apt-get install snmp-mibs-downloader ripgrep
 
+# Modifier la configuration SSH pour autoriser l'authentification par mot de passe
 echo "PermitRootLogin prohibit-password" >> /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-#echo  "export TERM=xterm-256color" >> ~/.zshrc
-echo "deb http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/apt/sources.list
-echo "deb-src http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/
 
+# Ajouter des dépôts Debian Jessie
+echo "deb http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/apt/sources.list
+echo "deb-src http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/apt/sources.list
+
+# Cloner des dépôts supplémentaires
 git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
+# Déplacer les fichiers clonés dans les emplacements corrects
 mv Ghostpack-CompiledBinaries /opt/resources/windows
-cd /opt/resources/windows wget https://raw.githubusercontent.com/fashionproof/EnableAllTokenPrivs/master/EnableAllTokenPrivs.ps1
-cd /opt/resources/windows wget https://raw.githubusercontent.com/Frozenka/linfast/main/winfast
-cd /opt/resources/linux https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
 
-#Modification visuel uniquement :
+# Télécharger des scripts spécifiques dans les bons répertoires
+cd /opt/resources/windows
+wget https://raw.githubusercontent.com/fashionproof/EnableAllTokenPrivs/master/EnableAllTokenPrivs.ps1
+wget https://raw.githubusercontent.com/Frozenka/linfast/main/winfast
+
+cd /opt/resources/linux
+wget https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
+
+# Modifications visuelles
 sed -i 's/"#"/"%{$fg[green]%}➜ %{$reset_color%}"/g' /opt/.exegol_shells_rc
 sed -i 's/"%m"/"${HOSTNAME#exegol-}"/g' /opt/.exegol_shells_rc
 sed -i 's/(%Z)//g' ~/.zshrc
 
-
-# On supprime l'install.sh
+# Supprimer le script d'installation
 rm /workspace/install.sh
- 
