@@ -1,19 +1,24 @@
 import subprocess
 import sys
 
-scope= input('Enter scope file \n')
+scope = input("Entrez le fichier contenant la liste des cibles (scope) :\n")
 
 def run_nmap():
     try:
+        # Commande Nmap
         command = [
             "nmap", "-sC", "-sV", "-Pn", "-p-", "-vvv",
-            "-oN", "nmapscan.txt", "-iL", scope
+            "-T3", "-iL", scope, "-oX", "nmap.xml"
         ]
 
         print("Lancement du scan Nmap...")
-        subprocess.run(command, check=True)
+        # Exécuter la commande Nmap
+        with open("resultatnmap.txt", "a") as output_file:
+            subprocess.run(command, stdout=output_file, stderr=subprocess.STDOUT, check=True)
+
         print("Scan Nmap terminé. Lancement de scrapnmap...")
-        subprocess.run(["python3", "/opt/resources/scrapmap.py", "-f", "nmapscan.txt"], check=True)
+        # Lancer le script `scrapmap.py` avec l'export XML
+        subprocess.run(["python3", "/opt/resources/scrapmap.py", "-f", "nmap.xml"], check=True)
 
         print("Traitement terminé avec succès.")
     except subprocess.CalledProcessError as e:
