@@ -5,20 +5,21 @@ scope = input("Entrez le fichier contenant la liste des cibles (scope) :\n")
 
 def run_nmap():
     try:
-        # Commande Nmap
-        command = [
+        # Commande Nmap avec export en XML et sortie vers fichier texte
+        nmap_command = [
             "nmap", "-sC", "-sV", "-Pn", "-p-", "-vvv",
-            "-T3", "-iL", scope, "-oX", "nmap.xml"
+            "-T3", "-iL", scope, "-oX", "./nmap.xml"
         ]
 
         print("Lancement du scan Nmap...")
-        # Exécuter la commande Nmap
+        # Redirection de la sortie vers resultatnmap.txt
         with open("resultatnmap.txt", "a") as output_file:
-            subprocess.run(command, stdout=output_file, stderr=subprocess.STDOUT, check=True)
+            subprocess.run(nmap_command, stdout=output_file, stderr=subprocess.STDOUT, check=True)
 
         print("Scan Nmap terminé. Lancement de scrapnmap...")
-        # Lancer le script `scrapmap.py` avec l'export XML
-        subprocess.run(["python3", "/opt/resources/scrapmap.py", "-f", "nmap.xml"], check=True)
+        # Commande Scrapmap avec le fichier XML généré
+        scrapmap_command = ["python3", "/opt/resources/scrapmap.py", "-f", "./nmap.xml"]
+        subprocess.run(scrapmap_command, check=True)
 
         print("Traitement terminé avec succès.")
     except subprocess.CalledProcessError as e:
