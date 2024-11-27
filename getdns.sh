@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p "Entrez le DNS : " DNS
+read -p "Entrez le FQDN  : " DNS
 
 dnsvalidator -tL 'https://raw.githubusercontent.com/blechschmidt/massdns/master/lists/resolvers.txt' -threads 50 -o /tmp/resolvers.txt &
 PID=$!
