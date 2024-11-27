@@ -47,7 +47,7 @@ echo "deb-src http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/apt
 # Cloner des dépôts supplémentaires
 git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-git clone https://github.com/vortexau/dnsvalidator.git /opt/tools/dnsvalidator && cd /opt/tools/dnsvalidator && sudo pip3 install -r requirements.txt && sudo python3 setup.py install
+git clone https://github.com/vortexau/dnsvalidator.git /opt/tools/dnsvalidator 
 
 # Déplacer les fichiers clonés dans les emplacements corrects
 mv Ghostpack-CompiledBinaries /opt/resources/windows
@@ -60,6 +60,11 @@ wget https://raw.githubusercontent.com/Frozenka/Exegol-Ressources/refs/heads/mai
 
 cd /opt/resources/linux
 wget https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
+
+
+cd /opt/tools/dnsvalidator
+pip3 install -r requirements.txt
+python3 setup.py install
 
 # Modifications visuelles
 sed -i 's/"#"/"%{$fg[green]%}➜ %{$reset_color%}"/g' /opt/.exegol_shells_rc
