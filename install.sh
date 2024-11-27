@@ -56,6 +56,7 @@ mv Ghostpack-CompiledBinaries /opt/resources/windows
 cd /opt/resources/windows
 wget https://raw.githubusercontent.com/fashionproof/EnableAllTokenPrivs/master/EnableAllTokenPrivs.ps1
 wget https://raw.githubusercontent.com/Frozenka/linfast/main/winfast
+wget https://raw.githubusercontent.com/Frozenka/Exegol-Ressources/refs/heads/main/getdns.sh -O /opt/tools/dnsvalidator/getdns.sh
 
 cd /opt/resources/linux
 wget https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
