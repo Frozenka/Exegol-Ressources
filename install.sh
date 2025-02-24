@@ -14,7 +14,7 @@ cp /opt/seclists/Passwords/xato-net-10-million-passwords-1000000.txt /opt/bigwl.
 # Télécharger un fichier de liste de chemins
 wget https://raw.githubusercontent.com/laluka/pypotomux/main/wordlists/path.lst
 
-chmod +x settarget.sh
+
 # Déplacer des fichiers et répertoires dans les bons emplacements
 mv ./scan.py /opt/resources/scan.py
 mv ./scrapmap.py /opt/resources/scrapmap.py
@@ -73,5 +73,6 @@ sed -i 's/"#"/"%{$fg[green]%}➜ %{$reset_color%}"/g' /opt/.exegol_shells_rc
 sed -i 's/"%m"/"${HOSTNAME#exegol-}"/g' /opt/.exegol_shells_rc
 sed -i 's/(%Z)//g' ~/.zshrc
 
+chmod +x settarget.sh /opt/tools/Exegol-history/
 # Supprimer le script d'installation
 rm /workspace/install.sh
