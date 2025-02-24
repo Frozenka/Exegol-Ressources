@@ -1,4 +1,6 @@
 #!/bin/bash
+#Petit tool pour définir la cible avec TARGET
+
 # Vérifie si l'argument est passé
 if [ -z "$1" ]; then
   echo "Vous devez spécifier une cible !"
