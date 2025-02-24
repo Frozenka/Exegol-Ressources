@@ -73,6 +73,6 @@ sed -i 's/"#"/"%{$fg[green]%}➜ %{$reset_color%}"/g' /opt/.exegol_shells_rc
 sed -i 's/"%m"/"${HOSTNAME#exegol-}"/g' /opt/.exegol_shells_rc
 sed -i 's/(%Z)//g' ~/.zshrc
 
-chmod +x settarget.sh /opt/tools/Exegol-history/
+chmod +x /opt/tools/Exegol-history/settarget.sh
 # Supprimer le script d'installation
 rm /workspace/install.sh
