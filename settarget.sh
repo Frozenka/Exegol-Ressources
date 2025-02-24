@@ -11,6 +11,5 @@ echo "export TARGET='$1'" | sudo tee -a /opt/tools/Exegol-history/profile.sh > /
 # Affiche un message de confirmation
 echo "TARGET set to $1"
 
-# Recharger le fichier profile.sh pour appliquer la modification
-source /opt/tools/Exegol-history/profile.sh
-exec zsh
+# Appliquer la modification dans l'environnement actuel
+export TARGET="$1"
