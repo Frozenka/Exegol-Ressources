@@ -5,11 +5,11 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-# Ajouter la ligne export TARGET='$1' dans le fichier profile.sh
-echo "export TARGET='$1'" | sudo tee -a /opt/tools/Exegol-history/profile.sh > /dev/null
+# Remplacer l'ancienne valeur de TARGET par la nouvelle dans le fichier profile.sh
+sudo sed -i "/^export TARGET=/c\export TARGET='$1'" /opt/tools/Exegol-history/profile.sh
 
 # Affiche un message de confirmation
 echo "TARGET set to $1"
 
-# Appliquer la modification dans l'environnement actuel
+# Appliquer immédiatement la modification dans l'environnement actuel
 export TARGET="$1"
