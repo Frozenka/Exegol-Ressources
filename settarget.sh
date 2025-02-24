@@ -12,6 +12,3 @@ sudo sed -i "/^export TARGET=/c\export TARGET='$1'" /opt/tools/Exegol-history/pr
 
 # Affiche un message de confirmation
 echo "TARGET set to $1"
-
-# Appliquer immédiatement la modification dans l'environnement actuel
-export TARGET="$1"
