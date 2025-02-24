@@ -35,7 +35,7 @@ pip3 install wsgidav cheroot pyftpdlib
 
 # Installation d'outils supplémentaires
 apt-get install snmp-mibs-downloader ripgrep
-
+apt install glow
 # Modifier la configuration SSH pour autoriser l'authentification par mot de passe
 echo "PermitRootLogin prohibit-password" >> /etc/ssh/sshd_config
 echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
