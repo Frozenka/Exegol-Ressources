@@ -11,3 +11,4 @@ gobuster vhost -w /opt/seclists/Discovery/DNS/subdomains-top1million-5000.txt  -
 runsmbserv #Lance un serveur smb et copie la commande dans le presseP
 phpshell #Pour avoir un webshell php
 settarget IP #Attention faire source ~/.zshrc aprés
+alias ssh ='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
