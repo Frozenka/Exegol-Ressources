@@ -20,5 +20,6 @@ alias getdns='bash /opt/tools/dnsvalidator/getdns.sh'
 alias cat='glow '
 alias responder='sudo responder -I eth0 -wFb'
 alias phpshell='echo "<?php system(\$_GET[\"cmd\"]); ?>" | xclip -selection clipboard && echo "Shell PHP copié !"'
-alias settarget='bash /opt/tools/Exegol-history/settarget.sh'
+alias settarget='bash /opt/tools/Exegol-history/settarget.sh "$1" && source /opt/tools/Exegol-history/profile.sh'
+
 
