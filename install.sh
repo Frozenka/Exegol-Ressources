@@ -50,7 +50,7 @@ echo "deb-src http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/apt
 git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/vortexau/dnsvalidator.git /opt/tools/dnsvalidator 
-git clone git@github.com:Frozenka/PentestRecon.git
+git clone git@github.com:Frozenka/PentestRecon.git /opt/tools/PentestRecon
 
 # Déplacer les fichiers clonés dans les emplacements corrects
 mv Ghostpack-CompiledBinaries /opt/resources/windows
