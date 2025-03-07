@@ -7,9 +7,11 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 #### Ce dépôt est un simple regroupement de mes ressources pour Exegol, me permettant de lancer des conteneurs personnalisés selon mon flux de travail a chaque nouveau conteneur.
 
 
+  
 ![Exegol (1)](https://github.com/Frozenka/Exegol-Ressources/assets/13807685/ceecb3e0-d5c7-4d53-8cbd-ff0223119113)
 
-
+## Installation : Votre configuration de base ne sera pas écrasée.
+`wget https://raw.githubusercontent.com/Frozenka/Exegol-Ressources/main/load_user_setup.sh && cat load_user_setup.sh > ~/.exegol/my-resources/setup/load_user_setup.sh && rm load_user_setup.sh `
 ## Fonctionnalités
 - **Utilisation de tmux avec la souris :** Plus besoin de connaître une multitude de raccourcis clavier.
 - **Division du terminal tmux :** Divisez le terminal tmux en quatre en utilisant simplement `Ctrl+b+'`.
@@ -38,8 +40,6 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 - Configuration de la souris : La souris est activée et une action est définie pour le bouton droit de la souris pour coller le contenu du presse-papiers.
 - Configuration de la fenêtre : Un raccourci clavier est défini pour diviser la fenêtre en plusieurs panneaux.
 
-## Installation : Votre configuration de base ne sera pas écrasée.
-`wget https://raw.githubusercontent.com/Frozenka/Exegol-Ressources/main/load_user_setup.sh && cat load_user_setup.sh > ~/.exegol/my-resources/setup/load_user_setup.sh && rm load_user_setup.sh `
 
 ## Contribuer
 N'hésitez pas à contribuer en ouvrant des problèmes, en proposant des améliorations, ou en soumettant des demandes de fusion. Votre contribution est appréciée !
