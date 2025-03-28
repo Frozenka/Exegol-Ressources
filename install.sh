@@ -74,6 +74,9 @@ sed -i 's/"#"/"%{$fg[green]%}➜ %{$reset_color%}"/g' /opt/.exegol_shells_rc
 sed -i 's/"%m"/"${HOSTNAME#exegol-}"/g' /opt/.exegol_shells_rc
 sed -i 's/(%Z)//g' ~/.zshrc
 
+# Pour ligolo-ng 
+sudo ip tuntap add user root mode tun ligolo
+
 chmod +x /opt/tools/Exegol-history/settarget.sh
 # Supprimer le script d'installation
 rm /workspace/install.sh
