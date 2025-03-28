@@ -14,3 +14,5 @@ settarget IP #Attention faire source ~/.zshrc aprés
 alias ssh ='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 certipy auth -pfx fichier.pfx -dc-ip $IP
 nxc smb "$IP" -u '$USER' -p '$PASSWORD'
+addcomputer.py $DOMAIN/$USER:$PASSWORD -dc-ip $IP
+
