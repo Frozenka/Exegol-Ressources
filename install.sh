@@ -13,6 +13,7 @@ cp /opt/seclists/Passwords/xato-net-10-million-passwords-1000000.txt /opt/bigwl.
 
 # Télécharger un fichier de liste de chemins
 wget https://raw.githubusercontent.com/laluka/pypotomux/main/wordlists/path.lst
+curl -sSL https://raw.githubusercontent.com/Frozenka/GetInfoAD/main/setup.sh | sudo bash
 cp /usr/share/wordlists/rockyou.txt /opt/
 
 # Déplacer des fichiers et répertoires dans les bons emplacements
