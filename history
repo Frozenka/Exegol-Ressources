@@ -15,4 +15,5 @@ alias ssh ='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 certipy auth -pfx fichier.pfx -dc-ip $IP
 nxc smb $IP -u $USER -p $PASSWORD
 addcomputer.py $DOMAIN/$USER:$PASSWORD -dc-ip $IP
-
+getinfoAD -u # users of AD
+getinfoAD # grap info of AD
