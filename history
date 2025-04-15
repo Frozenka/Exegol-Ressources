@@ -10,7 +10,6 @@ medusa -U '/opt/seclists/Usernames/top-usernames-shortlist.txt' -P /opt/seclists
 gobuster vhost -w /opt/seclists/Discovery/DNS/subdomains-top1million-5000.txt  -u $TARGET -t 50 --append-domain # Recherche de vhosts avec Gobuster
 runsmbserv #Lance un serveur smb et copie la commande dans le presseP
 phpshell #Pour avoir un webshell php
-settarget IP #Attention faire source ~/.zshrc aprés
 alias ssh ='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 certipy auth -pfx fichier.pfx -dc-ip $IP
 nxc smb $IP -u $USER -p $PASSWORD
