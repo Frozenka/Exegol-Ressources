@@ -71,7 +71,7 @@ pip3 install -r requirements.txt
 python3 setup.py install
 
 # Modifications visuelles
-grep -E '\bexh\w*' /opt/.exegol_history /opt/.exegol_aliases 
+sed -i 's/^exh /exegol /g' /opt/.exegol_history /opt/.exegol_aliases 
 sed -i 's/"#"/"%{$fg[green]%}➜ %{$reset_color%}"/g' /opt/.exegol_shells_rc
 sed -i 's/"%m"/"${HOSTNAME#exegol-}"/g' /opt/.exegol_shells_rc
 sed -i 's/(%Z)//g' ~/.zshrc
