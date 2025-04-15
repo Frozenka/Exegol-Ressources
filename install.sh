@@ -48,13 +48,13 @@ echo "deb http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/apt/sou
 echo "deb-src http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/apt/sources.list
 
 # Cloner des dépôts supplémentaires
-git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git 
+#git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/vortexau/dnsvalidator.git /opt/tools/dnsvalidator 
 git clone https://github.com/Frozenka/PentestRecon.git /opt/tools/PentestRecon
 
 # Déplacer les fichiers clonés dans les emplacements corrects
-mv Ghostpack-CompiledBinaries /opt/resources/windows
+#mv Ghostpack-CompiledBinaries /opt/resources/windows
 
 # Télécharger des scripts spécifiques dans les bons répertoires
 cd /opt/resources/windows
