@@ -16,3 +16,12 @@ nxc smb $IP -u $USER -p $PASSWORD
 addcomputer.py $DOMAIN/$USER:$PASSWORD -dc-ip $IP
 getinfoAD -u # users of AD
 getinfoAD # grap info of AD
+
+exegol export creds -u 'Administrator' --json
+exegol export hosts --ip '127.0.0.1'
+exegol export creds
+exegol add creds -u 'Administrator' -p 'Passw0rd!'
+exegol add hosts --ip '127.0.0.1'
+exegol show
+exegol apply creds
+exegol apply hosts
