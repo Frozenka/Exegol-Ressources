@@ -23,7 +23,7 @@ mv ./win/* /opt/resources/windows
 mv ./Linux/* /opt/resources/linux
 mv ./setup.sh /opt
 mv ./path.lst /opt
-mv ./.nxc/nxc.conf ~/.nxc.nxc.conf
+mv ./nxc/.nxc.conf ~/.nxc/nxc.conf 
 
 # Revenir à la racine et supprimer le dossier cloné
 cd ..
