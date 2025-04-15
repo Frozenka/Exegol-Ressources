@@ -23,7 +23,6 @@ mv ./win/* /opt/resources/windows
 mv ./Linux/* /opt/resources/linux
 mv ./setup.sh /opt
 mv ./path.lst /opt
-mv ./settarget.sh /opt/tools/Exegol-history/
 
 # Revenir à la racine et supprimer le dossier cloné
 cd ..
