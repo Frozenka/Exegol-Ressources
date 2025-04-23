@@ -35,7 +35,7 @@ python3 -m pip install --user uploadserver
 apt install ripgrep
 apt install medusa -y
 pip3 install wsgidav cheroot pyftpdlib
-
+pipx install git+https://github.com/brightio/penelope
 # Installation d'outils supplémentaires
 apt-get install snmp-mibs-downloader ripgrep
 apt install glow
