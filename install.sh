@@ -65,7 +65,7 @@ wget https://raw.githubusercontent.com/Frozenka/Exegol-Ressources/refs/heads/mai
 
 cd /opt/resources/linux
 wget https://raw.githubusercontent.com/Frozenka/linfast/main/linfast
-
+curl -sSL https://raw.githubusercontent.com/Frozenka/nxcwrap/refs/heads/main/install_nxcwraper.sh | bash
 
 cd /opt/tools/dnsvalidator
 pip3 install -r requirements.txt
