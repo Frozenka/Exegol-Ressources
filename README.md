@@ -11,7 +11,7 @@ Exegol [Exegol GitHub Repository](https://github.com/ThePorgs/Exegol) est un out
 ![Exegol (1)](https://github.com/Frozenka/Exegol-Ressources/assets/13807685/ceecb3e0-d5c7-4d53-8cbd-ff0223119113)
 
 ## Installation : Votre configuration de base ne sera pas écrasée.
-`wget https://raw.githubusercontent.com/Frozenka/Exegol-Ressources/main/load_user_setup.sh && cat load_user_setup.sh > ~/.exegol/my-resources/setup/load_user_setup.sh && rm load_user_setup.sh `
+`wget https://raw.githubusercontent.com/Frozenka/Exegol-Ressources/main/load_user_setup.sh && cat load_user_setup.sh >> ~/.exegol/my-resources/setup/load_user_setup.sh && rm load_user_setup.sh `
 ## Fonctionnalités
 - **Utilisation de tmux avec la souris :** Plus besoin de connaître une multitude de raccourcis clavier.
 - **Division du terminal tmux :** Divisez le terminal tmux en quatre en utilisant simplement `Ctrl+b+'`.
