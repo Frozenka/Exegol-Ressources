@@ -18,7 +18,7 @@ while true; do
   fi
   sleep 1
 done
-AMASS_CMD="amass enum -d $DNS -brute -alts -w /opt/seclists/Discovery/DNS/n0kovo_subdomains.txt -min-for-recursive 2 -dns-qps 3000 -v -rf /tmp/resolvers.txt -o /tmp/domains.txt"
+AMASS_CMD="amass enum -d $DNS -brute -alts -w /opt/lists/seclists/Discovery/DNS/n0kovo_subdomains.txt -min-for-recursive 2 -dns-qps 3000 -v -rf /tmp/resolvers.txt -o /tmp/domains.txt"
 echo "Lancement de la commande amass avec les paramètres suivants :"
 echo "$AMASS_CMD"
 eval "$AMASS_CMD"
