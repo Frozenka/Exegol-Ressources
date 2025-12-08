@@ -52,8 +52,10 @@ echo "deb-src http://ftp.fr.debian.org/debian/ jessie main non-free" >> /etc/apt
 #git clone https://github.com/r3motecontrol/Ghostpack-CompiledBinaries.git 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/vortexau/dnsvalidator.git /opt/tools/dnsvalidator 
-git clone https://github.com/Frozenka/PentestRecon.git /opt/tools/PentestRecon
+git clone https://github.com/vladko312/SSTImap /opt/tools/SSTImap
 
+
+pip3 install -r /opt/tools/SSTImap/requirements.txt
 # Déplacer les fichiers clonés dans les emplacements corrects
 #mv Ghostpack-CompiledBinaries /opt/resources/windows
 
